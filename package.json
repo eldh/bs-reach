@@ -20,6 +20,7 @@
     "@reach/menu-button": "^0.8.2",
     "@reach/tabs": "^0.8.2",
     "@reach/tooltip": "^0.8.2",
+    "@reach/visually-hidden": "^0.8.2",
     "bs-css": "^11.0.0",
     "reason-react": "^0.7.0"
   }
