@@ -1,12 +1,12 @@
 module Menu = {
-  [@bs.module "@reach/menu-button"] [@react.component]
+  [@bs.module "@reach/menu-button/dist"] [@react.component]
   external make:
     (~className: string=?, ~children: React.element) => React.element =
     "Menu";
 };
 
 module Button = {
-  [@bs.module "@reach/menu-button"] [@react.component]
+  [@bs.module "@reach/menu-button/dist"] [@react.component]
   external make:
     (
       ~className: string=?,
@@ -19,14 +19,14 @@ module Button = {
 };
 
 module List = {
-  [@bs.module "@reach/menu-button"] [@react.component]
+  [@bs.module "@reach/menu-button/dist"] [@react.component]
   external make:
     (~className: string=?, ~children: React.element) => React.element =
     "MenuList";
 };
 
 module Item = {
-  [@bs.module "@reach/menu-button"] [@react.component]
+  [@bs.module "@reach/menu-button/dist"] [@react.component]
   external make:
     (
       ~className: string=?,
@@ -38,7 +38,7 @@ module Item = {
 };
 
 module ExternalLink = {
-  [@bs.module "@reach/menu-button"] [@react.component]
+  [@bs.module "@reach/menu-button/dist"] [@react.component]
   external make:
     (
       ~className: string=?,
@@ -50,21 +50,21 @@ module ExternalLink = {
     React.element =
     "MenuLink";
 };
-module Link = {
-  module Imported = {
-    [@bs.module "@reach/menu-button"] [@react.component]
-    external make:
-      (
-        ~className: string=?,
-        ~children: React.element,
-        ~as_: 'a=?,
-        ~to_: string
-      ) =>
-      React.element =
-      "MenuLink";
-  };
-  [@react.component]
-  let make = (~to_, ~className=?, ~children) => {
-    <Imported to_ ?className as_=ReactRouter.Link.make> children </Imported>;
-  };
-};
+// module Link = {
+//   module Imported = {
+//     [@bs.module "@reach/menu-button/dist"] [@react.component]
+//     external make:
+//       (
+//         ~className: string=?,
+//         ~children: React.element,
+//         ~as_: 'a=?,
+//         ~to_: string
+//       ) =>
+//       React.element =
+//       "MenuLink";
+//   };
+//   [@react.component]
+//   let make = (~to_, ~className=?, ~children) => {
+//     <Imported to_ ?className as_=ReactRouter.Link.make> children </Imported>;
+//   };
+// };
