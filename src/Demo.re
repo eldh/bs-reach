@@ -9,7 +9,7 @@ module Index = {
           margin(`auto),
           marginTop(`px(40)),
           maxWidth(`px(500)),
-          padding2(~h=`zero, ~v=`px(10)),
+          padding(`px(10)),
         ]
         |> style
       )>
@@ -22,7 +22,7 @@ module Index = {
         </a>
         "."->React.string
       </p>
-      {["menu-button", "tabs", "tooltip", "dialog"]
+      {["menu-button", "tabs", "tooltip", "dialog", "alert"]
        |> List.map(url => {
             <div key=url className>
               <a href={"/" ++ url}> url->React.string </a>
@@ -43,6 +43,7 @@ let make = () => {
      | ["tooltip"] => <TooltipDemo />
      | ["tabs"] => <TabsDemo />
      | ["dialog"] => <DialogDemo />
+     | ["alert"] => <AlertDemo />
      | _ => <Index />
      }}
   </FocusVisible.Context>;

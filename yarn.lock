@@ -1754,6 +1754,16 @@
     chrome-trace-event "^1.0.2"
     nullthrows "^1.1.1"
 
+"@reach/alert@^0.8.5":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@reach/alert/-/alert-0.8.5.tgz#2a3610efbbc233dc01a0224e2ddbf6a7c4b9ff05"
+  integrity sha512-xHSoWDsiWYytcHNCrSJtjNBc1M8pbi9WD2tgs+URwxyu34AKldFmrX8y7sZE7Di0FJm9+VJoSOLzWvNcjP5hJw==
+  dependencies:
+    "@reach/utils" "^0.8.5"
+    "@reach/visually-hidden" "^0.8.2"
+    prop-types "^15.7.2"
+    tslib "^1.10.0"
+
 "@reach/auto-id@^0.8.5":
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.8.5.tgz#940500d4c93624852efa5ecbed29c5d7015eb6e9"
