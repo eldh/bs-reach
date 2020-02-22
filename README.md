@@ -1,5 +1,5 @@
 # bs-reach
 
-Bucklescript bindings for reach ui.
+Reason bindings for [Reach UI](https://reacttraining.com/reach-ui).
 
 More coming soon.
