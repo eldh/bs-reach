@@ -5,12 +5,14 @@
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
     "serve": "parcel index.html --port 2331",
-    "start": "bsb -make-world && parcel index.html --port 2331",
-    "clean": "bsb -clean-world"
+    "start": "yarn build && yarn serve",
+    "clean": "bsb -clean-world",
+    "prepublish": "yarn clean"
   },
   "files": [
     "src/reach"
   ],
+  "repository": "https://github.com/eldh/bs-reach",
   "keywords": [
     "BuckleScript",
     "accessibility",
