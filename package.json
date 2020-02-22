@@ -1,6 +1,6 @@
 {
   "name": "bs-reach",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
@@ -24,8 +24,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "7.1.1",
     "@glennsl/bs-jest": "^0.4.9",
+    "bs-platform": "7.1.1",
     "parcel": "^2.0.0-alpha.3.2"
   },
   "dependencies": {
