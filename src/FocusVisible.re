@@ -18,10 +18,16 @@ type useFocusInput = {
 external useFocusVisible_: option(useFocusInput) => focusVisibleProps =
   "useFocusVisible";
 
+module Context = {
+  [@bs.module "./FocusVisible.jsx"] [@react.component]
+  external make: (~children: React.element) => React.element =
+    "FocusVisibleManager";
+};
+
 let useFocusVisible = i => {
   let rawProps = useFocusVisible_(i);
-  {...rawProps, className: rawProps.dataProp ? " data-focus-visible " : ""}
-}
+  {...rawProps, className: rawProps.dataProp ? " data-focus-visible " : ""};
+};
 
 let focusStyle =
   Css.[

@@ -4,7 +4,8 @@
   "scripts": {
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
-    "start": "bsb -make-world && parcel index.html --port 1234",
+    "serve": "parcel index.html --port 2331",
+    "start": "bsb -make-world && parcel index.html --port 2331",
     "clean": "bsb -clean-world"
   },
   "keywords": [
@@ -20,16 +21,18 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "^7.1.1",
+    "bs-platform": "7.1.1",
     "parcel": "^2.0.0-alpha.3.2"
   },
   "dependencies": {
-    "@reach/dialog": "^0.8.4",
-    "@reach/menu-button": "^0.8.4",
-    "@reach/tabs": "^0.8.4",
-    "@reach/tooltip": "^0.8.4",
+    "@glennsl/bs-jest": "^0.4.9",
+    "@reach/dialog": "^0.8.5",
+    "@reach/menu-button": "^0.8.5",
+    "@reach/tabs": "^0.8.5",
+    "@reach/tooltip": "^0.8.5",
     "@reach/visually-hidden": "^0.8.2",
     "bs-css": "^11.0.0",
+    "bs-react-spring": "^0.3.2",
     "reason-react": "^0.7.0"
   }
 }

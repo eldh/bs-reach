@@ -50,21 +50,3 @@ module ExternalLink = {
     React.element =
     "MenuLink";
 };
-// module Link = {
-//   module Imported = {
-//     [@bs.module "@reach/menu-button/dist"] [@react.component]
-//     external make:
-//       (
-//         ~className: string=?,
-//         ~children: React.element,
-//         ~as_: 'a=?,
-//         ~to_: string
-//       ) =>
-//       React.element =
-//       "MenuLink";
-//   };
-//   [@react.component]
-//   let make = (~to_, ~className=?, ~children) => {
-//     <Imported to_ ?className as_=ReactRouter.Link.make> children </Imported>;
-//   };
-// };

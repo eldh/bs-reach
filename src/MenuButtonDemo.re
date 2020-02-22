@@ -1,4 +1,4 @@
-
+[%raw "require('@reach/menu-button/styles.css')"];
 open MenuButton;
 let buttonStyle =
   Css.(
@@ -6,9 +6,9 @@ let buttonStyle =
       unsafe("border", "none"),
       unsafe("color", "inherit"),
       unsafe("font", "inherit"),
-      unsafe("text-align", "inherit"),
-      unsafe("-webkit-font-smoothing", "inherit"),
-      unsafe("-webkit-appearance", "none"),
+      unsafe("textAlign", "inherit"),
+      unsafe("WebkitFontSmoothing", "inherit"),
+      unsafe("WebkitAppearance", "none"),
       lineHeight(`normal),
       background(`transparent),
       overflow(`visible),
@@ -32,7 +32,7 @@ let make = () => {
   let {FocusVisible.className, onFocus, onBlur} =
     FocusVisible.useFocusVisible(None);
   <Menu>
-    <Button className={buttonStyle ++ className} onFocus onBlur>
+    <MenuButton.Button className={buttonStyle ++ className} onFocus onBlur>
       <img
         src="https://randomuser.me/api/portraits/women/53.jpg"
         className=Css.(
@@ -40,7 +40,7 @@ let make = () => {
           |> style
         )
       />
-    </Button>
+    </MenuButton.Button>
     <List className=listStyle>
       <Item onSelect={() => Js.log("Download")}>
         "Download"->React.string

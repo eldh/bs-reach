@@ -1,9 +1,11 @@
 .DS_Store
 .merlin
 .bsb.lock
-.bs.js
+*.bs.js
 .parcel-cache
+.cache
 yarn-error.log
 npm-debug.log
 /lib/bs/
+/dist/
 /node_modules/
