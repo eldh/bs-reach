@@ -13,7 +13,7 @@
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": ["reason-react", "bs-css", "bs-react-spring"],
+  "bs-dependencies": ["reason-react", "bs-css"],
   "warnings": {
     "error": "+101"
   },

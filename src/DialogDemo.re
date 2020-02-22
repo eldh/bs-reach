@@ -24,7 +24,7 @@ module Custom = {
 [@react.component]
 let make = () => {
   let (isOpen, setOpen) = React.useState(() => false);
-  <div>
+  <Container>
     <Custom />
     <Button onClick={_ => setOpen(_ => true)}>
       "Open basic dialog"->React.string
@@ -38,5 +38,5 @@ let make = () => {
         "Close"->React.string
       </Button>
     </Dialog>
-  </div>;
+  </Container>;
 };
