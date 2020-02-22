@@ -34,6 +34,7 @@
     "@reach/alert": "^0.8.5",
     "@reach/dialog": "^0.8.5",
     "@reach/menu-button": "^0.8.5",
+    "@reach/skip-nav": "^0.8.5",
     "@reach/tabs": "^0.8.5",
     "@reach/tooltip": "^0.8.5",
     "@reach/visually-hidden": "^0.8.2",
