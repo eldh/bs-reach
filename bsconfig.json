@@ -1,10 +1,16 @@
 {
   "name": "reach",
   "version": "0.1.0",
-  "sources": {
-    "dir": "src",
-    "subdirs": true
-  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": false
+    },
+    {
+      "dir": "examples",
+      "subdirs": false
+    }
+  ],
   "reason": {
     "react-jsx": 3
   },

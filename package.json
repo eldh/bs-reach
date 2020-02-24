@@ -10,7 +10,7 @@
     "prepublish": "yarn clean"
   },
   "files": [
-    "src/reach"
+    "src"
   ],
   "repository": "https://github.com/eldh/bs-reach",
   "keywords": [
@@ -23,7 +23,7 @@
     "reach",
     "reasonml"
   ],
-  "author": "",
+  "author": "andreas.eldh@gmail.com",
   "license": "MIT",
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.9",
