@@ -31,7 +31,9 @@
     "parcel": "^2.0.0-alpha.3.2"
   },
   "dependencies": {
+    "@reach/accordion": "^0.8.5",
     "@reach/alert": "^0.8.5",
+    "@reach/alert-dialog": "^0.8.6",
     "@reach/dialog": "^0.8.5",
     "@reach/menu-button": "^0.8.5",
     "@reach/skip-nav": "^0.8.5",

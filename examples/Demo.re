@@ -22,7 +22,15 @@ module Index = {
         </a>
         "."->React.string
       </p>
-      {["menu-button", "tabs", "tooltip", "dialog", "alert"]
+      {[
+         "accordion",
+         "alert-dialog",
+         "alert",
+         "dialog",
+         "menu-button",
+         "tabs",
+         "tooltip",
+       ]
        |> List.map(url => {
             <div key=url className>
               <a href={"/" ++ url}> url->React.string </a>
@@ -41,6 +49,8 @@ let make = () => {
     {switch (url.path) {
      | ["menu-button"] => <MenuButtonDemo />
      | ["tooltip"] => <TooltipDemo />
+     | ["accordion"] => <AccordionDemo />
+     | ["alert-dialog"] => <AlertDialogDemo />
      | ["tabs"] => <TabsDemo />
      | ["dialog"] => <DialogDemo />
      | ["alert"] => <AlertDemo />
