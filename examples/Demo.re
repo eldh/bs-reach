@@ -26,6 +26,7 @@ module Index = {
          "accordion",
          "alert-dialog",
          "alert",
+         "checkbox",
          "dialog",
          "menu-button",
          "tabs",
@@ -47,13 +48,14 @@ let make = () => {
   let url = ReasonReact.Router.useUrl();
   <FocusVisible.Context>
     {switch (url.path) {
-     | ["menu-button"] => <MenuButtonDemo />
-     | ["tooltip"] => <TooltipDemo />
      | ["accordion"] => <AccordionDemo />
      | ["alert-dialog"] => <AlertDialogDemo />
-     | ["tabs"] => <TabsDemo />
-     | ["dialog"] => <DialogDemo />
      | ["alert"] => <AlertDemo />
+     | ["checkbox"] => <CheckboxDemo />
+     | ["dialog"] => <DialogDemo />
+     | ["menu-button"] => <MenuButtonDemo />
+     | ["tabs"] => <TabsDemo />
+     | ["tooltip"] => <TooltipDemo />
      | _ => <Index />
      }}
   </FocusVisible.Context>;

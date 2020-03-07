@@ -34,6 +34,7 @@
     "@reach/accordion": "^0.8.5",
     "@reach/alert": "^0.8.5",
     "@reach/alert-dialog": "^0.8.6",
+    "@reach/checkbox": "^0.8.6",
     "@reach/dialog": "^0.8.5",
     "@reach/menu-button": "^0.8.5",
     "@reach/skip-nav": "^0.8.5",

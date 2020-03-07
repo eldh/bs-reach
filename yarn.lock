@@ -1802,6 +1802,18 @@
     "@reach/utils" "^0.8.6"
     tslib "^1.10.0"
 
+"@reach/checkbox@^0.8.6":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@reach/checkbox/-/checkbox-0.8.6.tgz#c25e8e0dfbabbf7ee31f5879cb8ce59493469258"
+  integrity sha512-tAyn2CQu3CNJkG2F2+zOE4FMb1oWCC+pdE2+shiqsZWH5A7GSrq+lb5wrrMdtDRUdLQDa41HSgPY/UpTVIpTHA==
+  dependencies:
+    "@reach/auto-id" "^0.8.6"
+    "@reach/machine" "^0.8.6"
+    "@reach/utils" "^0.8.6"
+    "@xstate/fsm" "^1.3.0"
+    tslib "^1.10.0"
+    warning "^4.0.3"
+
 "@reach/descendants@^0.8.5":
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/@reach/descendants/-/descendants-0.8.5.tgz#084b2410bd13be4a76ac663d5957a54325301df0"
@@ -1832,6 +1844,15 @@
     prop-types "^15.7.2"
     react-focus-lock "^2.2.1"
     react-remove-scroll "^2.2.0"
+    tslib "^1.10.0"
+
+"@reach/machine@^0.8.6":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@reach/machine/-/machine-0.8.6.tgz#c8836e7d93fd9eded7e2be018dad37dda0a0f86d"
+  integrity sha512-PNizP2G0M6e4XBrpfuCTVTxGxIB1cs/0gvNH7UuKygeacXXTMe1NC+vh/AFeCWwjOTVr/s8R7pmdvJAuUl2aEQ==
+  dependencies:
+    "@reach/utils" "^0.8.6"
+    "@xstate/fsm" "^1.3.0"
     tslib "^1.10.0"
 
 "@reach/menu-button@^0.8.5":
@@ -2032,6 +2053,11 @@
   integrity sha512-XAvHLwG7UQ+8M4caKIH0ZozIOYay5fQkAgyIXegXT9jPtdIGdhga+sUEdAr1CiG46aB+c64xQEYyEzlwWVTNzA==
   dependencies:
     "@types/yargs-parser" "*"
+
+"@xstate/fsm@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@xstate/fsm/-/fsm-1.3.0.tgz#2a9c2627961473d23c7f4ad4d2db011e76d3975e"
+  integrity sha512-dDXp0zEa3r6MzSM1UhqqGlxHna4CH1F2DttmZVpWk7tK33E1bBfV9EAaekmdD091YZs+kaI65oNQhWA55HgJOg==
 
 abab@^2.0.0:
   version "2.0.3"
