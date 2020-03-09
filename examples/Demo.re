@@ -27,6 +27,7 @@ module Index = {
          "alert-dialog",
          "alert",
          "checkbox",
+         "combobox",
          "dialog",
          "menu-button",
          "tabs",
@@ -52,6 +53,7 @@ let make = () => {
      | ["alert-dialog"] => <AlertDialogDemo />
      | ["alert"] => <AlertDemo />
      | ["checkbox"] => <CheckboxDemo />
+     | ["combobox"] => <ComboboxDemo />
      | ["dialog"] => <DialogDemo />
      | ["menu-button"] => <MenuButtonDemo />
      | ["tabs"] => <TabsDemo />

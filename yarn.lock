@@ -1814,12 +1814,35 @@
     tslib "^1.10.0"
     warning "^4.0.3"
 
+"@reach/combobox@^0.8.6":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@reach/combobox/-/combobox-0.8.6.tgz#5ba1e9296b28e7c036895c52a401a190a5bdfb96"
+  integrity sha512-JtM4Lg/nuQjbvYpFbbeIfKKVVZHl7GkIi2NT5nbBuIQKW/uzJGySMzkNRJtqKJpuBUcMm7Fy2ZCi2lbMnp11QQ==
+  dependencies:
+    "@reach/auto-id" "^0.8.6"
+    "@reach/descendants" "^0.8.6"
+    "@reach/popover" "^0.8.6"
+    "@reach/portal" "^0.8.6"
+    "@reach/utils" "^0.8.6"
+    escape-regexp "0.0.1"
+    highlight-words-core "1.2.2"
+    prop-types "^15.7.2"
+    tslib "^1.10.0"
+
 "@reach/descendants@^0.8.5":
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/@reach/descendants/-/descendants-0.8.5.tgz#084b2410bd13be4a76ac663d5957a54325301df0"
   integrity sha512-L1zGSeOtpK8m/SA/CyJsKBnk+z+kvraEJUq1u/apkw1n47j1Byu40nA7TwKvUxuZtEVaK1CdsGFRGeyHRfU/kg==
   dependencies:
     "@reach/utils" "^0.8.5"
+    tslib "^1.10.0"
+
+"@reach/descendants@^0.8.6":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@reach/descendants/-/descendants-0.8.6.tgz#1c6ffac63fb1e116691e47efe20bcb5e8372c106"
+  integrity sha512-sQmeEKjlfcFt7Tso7EnWfCecBDNHAV8tTn99KYtd13WRMRb86JFxEx6FfOIVHkA1Ht1aEaVxxibDW6/y/FHqLQ==
+  dependencies:
+    "@reach/utils" "^0.8.6"
     tslib "^1.10.0"
 
 "@reach/dialog@^0.8.5":
@@ -1884,6 +1907,17 @@
     tabbable "^4.0.0"
     tslib "^1.10.0"
 
+"@reach/popover@^0.8.6":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@reach/popover/-/popover-0.8.6.tgz#21f1be83016ed0adf5b2f6b0caa2e5c846bea188"
+  integrity sha512-gW6JjlmjYDO9wDzsxThNihixpfUaaJ70BzqarhM/Nb8fS2hyZo5W2Zbu7yML7HKOej9HpwgLzAE01rWiTuu9yw==
+  dependencies:
+    "@reach/portal" "^0.8.6"
+    "@reach/rect" "^0.8.6"
+    "@reach/utils" "^0.8.6"
+    tabbable "^4.0.0"
+    tslib "^1.10.0"
+
 "@reach/portal@^0.8.5":
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/@reach/portal/-/portal-0.8.5.tgz#586e8686e9ba34368b1df3fc9a84c3ef923dd2d3"
@@ -1905,6 +1939,16 @@
   integrity sha512-6vrGm/9Cjw5ygbzccJdmrERqLxmaR2dATzkOvmsnTuR54BH/UgUjUYMxy/pVCmHZacNMTZRqOJwAyJQBOdCD4w==
   dependencies:
     "@reach/observe-rect" "^1.0.5"
+    prop-types "^15.7.2"
+    tslib "^1.10.0"
+
+"@reach/rect@^0.8.6":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@reach/rect/-/rect-0.8.6.tgz#8f5b6c7fd2cf13a03cfda001fef0a5beb21fe1a2"
+  integrity sha512-1CriCEshJ1VUOw05bG9u1leHBydP+Z9Vk5adPw5v+bLHz1QW1HB/0UmZAbHluY6a5XLN2KqULKc9Fk7NT1jZKQ==
+  dependencies:
+    "@reach/observe-rect" "^1.0.5"
+    "@reach/utils" "^0.8.6"
     prop-types "^15.7.2"
     tslib "^1.10.0"
 
@@ -3592,6 +3636,11 @@ escape-html@~1.0.3:
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
   integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
 
+escape-regexp@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/escape-regexp/-/escape-regexp-0.0.1.tgz#f44bda12d45bbdf9cb7f862ee7e4827b3dd32254"
+  integrity sha1-9EvaEtRbvfnLf4Yu5+SCez3TIlQ=
+
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
@@ -4162,6 +4211,11 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
+
+highlight-words-core@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/highlight-words-core/-/highlight-words-core-1.2.2.tgz#1eff6d7d9f0a22f155042a00791237791b1eeaaa"
+  integrity sha512-BXUKIkUuh6cmmxzi5OIbUJxrG8OAk2MqoL1DtO3Wo9D2faJg2ph5ntyuQeLqaHJmzER6H5tllCDA9ZnNe9BVGg==
 
 highlight.js@~9.12.0:
   version "9.12.0"
