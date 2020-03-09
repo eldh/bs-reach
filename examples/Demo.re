@@ -29,6 +29,7 @@ module Index = {
          "checkbox",
          "combobox",
          "dialog",
+         "disclosure",
          "menu-button",
          "tabs",
          "tooltip",
@@ -55,6 +56,7 @@ let make = () => {
      | ["checkbox"] => <CheckboxDemo />
      | ["combobox"] => <ComboboxDemo />
      | ["dialog"] => <DialogDemo />
+     | ["disclosure"] => <DisclosureDemo />
      | ["menu-button"] => <MenuButtonDemo />
      | ["tabs"] => <TabsDemo />
      | ["tooltip"] => <TooltipDemo />

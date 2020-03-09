@@ -1869,6 +1869,16 @@
     react-remove-scroll "^2.2.0"
     tslib "^1.10.0"
 
+"@reach/disclosure@^0.8.6":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@reach/disclosure/-/disclosure-0.8.6.tgz#07788bfb88580d85192527cc32132df2afa44b01"
+  integrity sha512-65sv6gHiLyyPuqgPMeBqf/horiGM5OeePg5P8pumlnqxYbsZeLUDcEtd7QCeGD6k4xi6WnhbREyxETfvfbL5Aw==
+  dependencies:
+    "@reach/auto-id" "^0.8.6"
+    "@reach/utils" "^0.8.6"
+    tslib "^1.10.0"
+    warning "^4.0.3"
+
 "@reach/machine@^0.8.6":
   version "0.8.6"
   resolved "https://registry.yarnpkg.com/@reach/machine/-/machine-0.8.6.tgz#c8836e7d93fd9eded7e2be018dad37dda0a0f86d"

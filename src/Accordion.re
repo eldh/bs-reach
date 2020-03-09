@@ -1,10 +1,3 @@
-// import {
-//   Accordion,
-//   AccordionItem,
-//   AccordionButton,
-//   AccordionPanel,
-// } from "@reach/accordion";
-// import "@reach/accordion/styles.css";
 
 module Item = {
   [@bs.module "@reach/accordion"] [@react.component]
