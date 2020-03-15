@@ -1879,6 +1879,18 @@
     tslib "^1.10.0"
     warning "^4.0.3"
 
+"@reach/listbox@^0.8.7":
+  version "0.8.7"
+  resolved "https://registry.yarnpkg.com/@reach/listbox/-/listbox-0.8.7.tgz#f6ca23d4bfba0f133e6bf4f27a5568bd8d0c281e"
+  integrity sha512-FlE2HM4DtVhZjDNpP2/z7HT5K+SGHzBH2fPGce9fRiiNXURqFHlmpV7vKkdJSGxV+D0ZOk8lsjD/9CWnzZA4EQ==
+  dependencies:
+    "@reach/auto-id" "^0.8.6"
+    "@reach/descendants" "^0.8.6"
+    "@reach/machine" "^0.8.6"
+    "@reach/popover" "^0.8.6"
+    "@reach/utils" "^0.8.6"
+    prop-types "^15.7.2"
+
 "@reach/machine@^0.8.6":
   version "0.8.6"
   resolved "https://registry.yarnpkg.com/@reach/machine/-/machine-0.8.6.tgz#c8836e7d93fd9eded7e2be018dad37dda0a0f86d"

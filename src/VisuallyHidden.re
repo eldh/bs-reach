@@ -1,2 +1,3 @@
 [@bs.module "@reach/visually-hidden"] [@react.component]
-external make: (~children: string) => React.element = "default";
+external make: (~id: option(string)=?, ~children: string) => React.element =
+  "default";
