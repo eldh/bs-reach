@@ -1,4 +1,4 @@
-[@bs.module "@reach/listbox"] [@react.component]
+[@bs.module "./compat/listbox"] [@react.component]
 external make:
   (
     ~arrow: option(bool)=?,

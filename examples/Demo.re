@@ -1,5 +1,5 @@
 module Index = {
-  Css.(global("body, *", [margin(px(0)), fontFamily("sans-serif")]));
+  Css.(global("body, *", [margin(px(0)), fontFamily(`sansSerif)]));
   let className = Css.([marginRight(`px(10))] |> style);
   [@react.component]
   let make = () => {

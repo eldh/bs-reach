@@ -9,67 +9,33 @@ external make:
   "Combobox";
 
 module Input = {
-  type props = {
-    .
-    "selectOnClick": bool,
-    "autocomplete": bool,
-    "aria-label": option(string),
-    "aria-labelledby": option(string),
-    "style": option(ReactDOMRe.Style.t),
-    "className": option(string),
-  };
-  [@bs.module "@reach/combobox"]
-  external make: React.component(props) = "ComboboxInput";
-
-  let makeProps =
-      (
-        ~selectOnClick: bool=false,
-        ~autocomplete: bool=true,
-        ~style: option(ReactDOMRe.Style.t)=?,
-        ~className: option(string)=?,
-        ~ariaLabel: option(string)=?,
-        ~ariaLabelledby: option(string)=?,
-        (),
-      ) => {
-    "aria-label": ariaLabel,
-    "aria-labelledby": ariaLabelledby,
-    "style": style,
-    "selectOnClick": selectOnClick,
-    "autocomplete": autocomplete,
-    "className": className,
-  };
+  [@bs.module "./compat/combobox"] [@react.component]
+  external make:
+    (
+      ~selectOnClick: option(bool)=?,
+      ~autocomplete: option(bool)=?,
+      ~style: option(ReactDOMRe.Style.t)=?,
+      ~className: option(string)=?,
+      ~ariaLabel: option(string)=?,
+      ~ariaLabelledby: option(string)=?
+    ) =>
+    React.element =
+    "ComboboxInput";
 };
 
 module Popover = {
-  type props = {
-    .
-    "portal": bool,
-    "aria-label": option(string),
-    "aria-labelledby": option(string),
-    "style": option(ReactDOMRe.Style.t),
-    "className": option(string),
-    "children": option(React.element),
-  };
-  [@bs.module "@reach/combobox"]
-  external make: React.component(props) = "ComboboxPopover";
-
-  let makeProps =
-      (
-        ~portal: bool=true,
-        ~style: option(ReactDOMRe.Style.t)=?,
-        ~className: option(string)=?,
-        ~ariaLabel: option(string)=?,
-        ~ariaLabelledby: option(string)=?,
-        ~children: option(React.element)=?,
-        (),
-      ) => {
-    "aria-label": ariaLabel,
-    "aria-labelledby": ariaLabelledby,
-    "style": style,
-    "portal": portal,
-    "className": className,
-    "children": children,
-  };
+  [@bs.module "./compat/combobox"] [@react.component]
+  external make:
+    (
+      ~portal: option(bool)=?,
+      ~style: option(ReactDOMRe.Style.t)=?,
+      ~className: option(string)=?,
+      ~ariaLabel: option(string)=?,
+      ~ariaLabelledby: option(string)=?,
+      ~children: option(React.element)=?
+    ) =>
+    React.element =
+    "ComboboxPopover";
 };
 
 module List = {

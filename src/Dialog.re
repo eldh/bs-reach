@@ -1,68 +1,30 @@
-type props = {
-  .
-  "isOpen": bool,
-  "aria-label": option(string),
-  "aria-labelledby": option(string),
-  "style": option(ReactDOMRe.Style.t),
-  "className": option(string),
-  "onDismiss": unit => unit,
-  // "allowPinchZoom": option(bool),
-  "children": React.element,
-};
+[@bs.module "./compat/dialog"] [@react.component]
+external make:
+  (
+    ~isOpen: bool,
+    ~ariaLabel: option(string)=?,
+    ~ariaLabelledby: option(string)=?,
+    ~style: option(ReactDOMRe.Style.t)=?,
+    ~className: option(string)=?,
+    ~onDismiss: option(unit => unit)=?,
+    ~allowPinchZoom: option(bool)=?,
+    ~children: React.element
+  ) =>
+  React.element =
+  "Dialog";
 
-[@bs.module "@reach/dialog"] external make: React.component(props) = "Dialog";
-
-let makeProps =
+module Content = {
+  [@bs.module "./compat/dialog"] [@react.component]
+  external make:
     (
-      ~isOpen: bool,
       ~ariaLabel: option(string)=?,
       ~ariaLabelledby: option(string)=?,
       ~style: option(ReactDOMRe.Style.t)=?,
       ~className: option(string)=?,
-      ~onDismiss: unit => unit,
-      // Disable allowPinchZoom for now since it causes an annoying react dom warning
-      // ~allowPinchZoom: option(bool)=?,
-      ~children: React.element,
-      (),
-    ) => {
-  "isOpen": isOpen,
-  "aria-label": ariaLabel,
-  "aria-labelledby": ariaLabelledby,
-  "style": style,
-  "className": className,
-  "onDismiss": onDismiss,
-  // "allowPinchZoom": allowPinchZoom,
-  "children": children,
-};
-
-module Content = {
-  type props = {
-    .
-    "aria-label": option(string),
-    "aria-labelledby": option(string),
-    "style": option(ReactDOMRe.Style.t),
-    "className": option(string),
-    "children": React.element,
-  };
-
-  [@bs.module "@reach/dialog"]
-  external make: React.component(props) = "DialogContent";
-
-  let makeProps =
-      (
-        ~ariaLabel: option(string)=?,
-        ~ariaLabelledby: option(string)=?,
-        ~style: option(ReactDOMRe.Style.t)=?,
-        ~className: option(string)=?,
-        ~children: React.element,
-        (),
-      ) => {
-    "aria-label": ariaLabel,
-    "aria-labelledby": ariaLabelledby,
-    "style": style,
-    "className": className,
-    "children": children,
-  };
+      ~children: React.element
+    ) =>
+    React.element =
+    "DialogContent";
 };
 
 module Overlay = {

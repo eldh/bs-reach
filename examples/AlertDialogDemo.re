@@ -7,7 +7,6 @@ let make = () => {
       "Open alert dialog"->React.string
     </Button>
     <AlertDialog
-      ariaLabel="Delete?"
       isOpen
       leastDestructiveRef={ReactDOMRe.Ref.domRef(cancelRef)}>
       <AlertDialog.Label> "Please Confirm!"->React.string </AlertDialog.Label>

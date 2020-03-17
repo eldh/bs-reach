@@ -4,6 +4,7 @@ let convertCheckedVal =
   | `mixed => "mixed"
   | `true_ => true->Obj.magic
   | `false_ => false->Obj.magic;
+
 module Mixed = {
   type props = {
     .

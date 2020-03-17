@@ -1,72 +1,30 @@
-type props = {
-  .
-  "isOpen": option(bool),
-  "leastDestructiveRef": ReactDOMRe.Ref.t,
-  "aria-label": option(string),
-  "aria-labelledby": option(string),
-  "style": option(ReactDOMRe.Style.t),
-  "className": option(string),
-  // "onDismiss": unit => unit,
-  // "allowPinchZoom": option(bool),
-  "children": React.element,
-};
+[@bs.module "./compat/alert-dialog"] [@react.component]
+external make:
+  (
+    ~isOpen: option(bool)=?,
+    ~leastDestructiveRef: ReactDOMRe.Ref.t,
+    ~ariaLabelledby: option(string)=?,
+    ~style: option(ReactDOMRe.Style.t)=?,
+    ~className: option(string)=?,
+    ~onDismiss: option(unit => unit)=?,
+    ~allowPinchZoom: option(bool)=?,
+    ~children: React.element
+  ) =>
+  React.element =
+  "AlertDialog";
 
-[@bs.module "@reach/alert-dialog"]
-external make: React.component(props) = "AlertDialog";
-
-let makeProps =
+module Content = {
+  [@bs.module "./compat/alert-dialog"] [@react.component]
+  external make:
     (
-      ~isOpen: option(bool)=?,
-      ~leastDestructiveRef: ReactDOMRe.Ref.t,
       ~ariaLabel: option(string)=?,
       ~ariaLabelledby: option(string)=?,
       ~style: option(ReactDOMRe.Style.t)=?,
       ~className: option(string)=?,
-      // ~onDismiss: unit => unit,
-      // Disable allowPinchZoom for now since it causes an annoying react dom warning
-      // ~allowPinchZoom: option(bool)=?,
-      ~children: React.element,
-      (),
-    ) => {
-  "isOpen": isOpen,
-  "leastDestructiveRef": leastDestructiveRef,
-  "aria-label": ariaLabel,
-  "aria-labelledby": ariaLabelledby,
-  "style": style,
-  "className": className,
-  // "onDismiss": onDismiss,
-  // "allowPinchZoom": allowPinchZoom,
-  "children": children,
-};
-
-module Content = {
-  type props = {
-    .
-    "aria-label": option(string),
-    "aria-labelledby": option(string),
-    "style": option(ReactDOMRe.Style.t),
-    "className": option(string),
-    "children": React.element,
-  };
-
-  [@bs.module "@reach/alert-dialog"]
-  external make: React.component(props) = "AlertDialogContent";
-
-  let makeProps =
-      (
-        ~ariaLabel: option(string)=?,
-        ~ariaLabelledby: option(string)=?,
-        ~style: option(ReactDOMRe.Style.t)=?,
-        ~className: option(string)=?,
-        ~children: React.element,
-        (),
-      ) => {
-    "aria-label": ariaLabel,
-    "aria-labelledby": ariaLabelledby,
-    "style": style,
-    "className": className,
-    "children": children,
-  };
+      ~children: React.element
+    ) =>
+    React.element =
+    "AlertDialogContent";
 };
 
 module Label = {
