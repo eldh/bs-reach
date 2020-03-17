@@ -9,4 +9,4 @@
       ~children: React.element
     ) =>
     React.element =
-    "default";
+    "Tooltip";
