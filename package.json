@@ -1,6 +1,6 @@
 {
   "name": "bs-reach",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "scripts": {
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
