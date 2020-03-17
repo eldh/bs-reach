@@ -1,4 +1,3 @@
-/* TODO: figure out ariaLabel */
 [@bs.module "@reach/tabs"] [@react.component]
 external make:
   (

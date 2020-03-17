@@ -2080,6 +2080,17 @@
     "@reach/utils" "^0.9.0"
     tslib "^1.10.0"
 
+"@reach/slider@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@reach/slider/-/slider-0.9.0.tgz#20b707488f375271356c896338dab2fc139de4c2"
+  integrity sha512-9QTEXS6zo1qmgUxGLzV1y5ejrb0ammKo2yV4UjuvNOisZAle6KAzczJUexCCcYBhL0qjY4KNGfhTDibP+Cjetg==
+  dependencies:
+    "@reach/auto-id" "^0.9.0"
+    "@reach/utils" "^0.9.0"
+    prop-types "^15.7.2"
+    tslib "^1.10.0"
+    warning "^4.0.3"
+
 "@reach/tabs@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@reach/tabs/-/tabs-0.9.0.tgz#cee0f374fb49cb300d829abdbd730816ac0f93bd"
