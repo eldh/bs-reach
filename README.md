@@ -2,6 +2,12 @@
 
 # bs-reach
 
-Reason bindings for [Reach UI](https://reacttraining.com/reach-ui).
+Reason bindings for [Reach UI](https://reacttraining.com/reach-ui). 
 
-More coming soon.
+## Documentation
+The [official documentation](https://reacttraining.com/reach-ui) for Reach UI has a lot of great examples and explains the api of the components well. The bindings tries to deviate from the original api:s as little as possible.
+
+Under the `examples` directory there are some examples of how to use these bindings. 
+
+## Contributions
+Please open pull requests or issues!
