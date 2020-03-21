@@ -43,11 +43,13 @@
     "@reach/listbox": "^0.9.1",
     "@reach/menu-button": "^0.9.1",
     "@reach/portal": "^0.9.0",
+    "@reach/rect": "^0.9.0",
     "@reach/skip-nav": "^0.9.0",
     "@reach/slider": "^0.9.1",
     "@reach/tabs": "^0.9.1",
     "@reach/tooltip": "^0.9.1",
     "@reach/visually-hidden": "^0.9.0",
+    "@reach/window-size": "^0.9.0",
     "reason-react": "^0.7.0"
   }
 }

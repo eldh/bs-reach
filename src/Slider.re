@@ -1,25 +1,4 @@
-// Prop	Type	Required	Default
-// children	node	true
-// defaultValue	number	false
-// disabled	boolean	false
-// getValueText	func	false
-// handleAlignment	`'center'	'contain'`	false
-// max	number	false	100
-// min	number	false	0
-// name	string	false
-// onChange	func	false
-// orientation	`'horizontal'	'vertical'`	false
-// step	number	false
-// value	number	false
-// getValueText	func	false
-// handleAlignment	enum'	false	'center'
-// max	number	false	100
-// min	number	false	0
-// name	string	false
-// onChange	func	false
-// orientation	enum	false	'horizontal'
-// step	number	false
-// value	number	false
+
 [@bs.module "@reach/slider"] [@react.component]
 external make:
   (
