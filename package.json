@@ -10,7 +10,8 @@
     "prepublish": "yarn clean"
   },
   "files": [
-    "src"
+    "src",
+    "bsconfig.json"
   ],
   "repository": "https://github.com/eldh/bs-reach",
   "keywords": [
