@@ -8,7 +8,8 @@
     },
     {
       "dir": "examples",
-      "subdirs": false
+      "subdirs": false,
+      "type" : "dev"
     }
   ],
   "reason": {
