@@ -15,7 +15,7 @@ let make = () => {
       <Listbox.Option value="pollo" label="Pollo" disabled=true>
         "Pollo"->React.string
       </Listbox.Option>
-      <div className=Css.([background(`hex("#ccc"))] |> style)>
+      <div style={ReactDOMRe.Style.make(~backgroundColor="#ccc", ())}>
         <Listbox.Option value="pastor" label="Pastor">
           "Pastor"->React.string
         </Listbox.Option>

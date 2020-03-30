@@ -1,4 +1,5 @@
 [%raw "require('@reach/checkbox/styles.css')"];
+[%raw "require('./CheckboxDemo.css')"];
 module MyCheckbox = {
   [@react.component]
   let make =
@@ -11,36 +12,20 @@ module MyCheckbox = {
         ~children,
         ~onChange=?,
       ) => {
-    <span
-      className=Css.(
-        [
-          selector(
-            "[data-reach-custom-checkbox][data-state=\"checked\"]",
-            [backgroundColor(rgb(255, 0, 0))],
-          ),
-          selector(
-            "[data-reach-custom-checkbox][data-state=\"unchecked\"]",
-            [backgroundColor(rgb(0, 255, 0))],
-          ),
-          selector(
-            "[data-reach-custom-checkbox][data-state=\"mixed\"]",
-            [backgroundColor(rgb(0, 0, 255))],
-          ),
-        ]
-        |> style
-      )>
-      <label>
-        <Checkbox.Custom
-          checked
-          ?value
-          ?defaultChecked
-          ?name
-          ?disabled
-          ?onChange
-        />
-        children
-      </label>
-    </span>;
+    <span>
+
+        <label>
+          <Checkbox.Custom
+            checked
+            ?value
+            ?defaultChecked
+            ?name
+            ?disabled
+            ?onChange
+          />
+          children
+        </label>
+      </span>;
   };
 };
 

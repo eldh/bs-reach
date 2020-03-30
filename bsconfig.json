@@ -20,7 +20,7 @@
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": ["reason-react", "bs-css", "bs-css-emotion"],
+  "bs-dependencies": ["reason-react"],
   "warnings": {
     "error": "+101"
   },

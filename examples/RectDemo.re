@@ -6,16 +6,16 @@ let make = () => {
     <div
       ref={ReactDOMRe.Ref.domRef(ref_)}
       contentEditable=true
-      className=Css.(
-        [
-          display(`inlineBlock),
-          padding(px(10)),
-          border(px(1), `solid, `rgb((200, 200, 200))),
-        ]
-        |> style
-      )
+      style={ReactDOMRe.Style.make(
+        ~display="inline",
+        ~padding="10px",
+        ~border="1px solid #ccc",
+        (),
+      )}
       dangerouslySetInnerHTML={"__html": "Edit this to change the size!"}
     />
-    <pre> {rect->Obj.magic->Js.Json.stringifyWithSpace(2)->React.string} </pre>
+    <pre>
+      {rect->Obj.magic->Js.Json.stringifyWithSpace(2)->React.string}
+    </pre>
   </div>;
 };

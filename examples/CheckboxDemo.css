@@ -1,0 +1,9 @@
+[data-reach-custom-checkbox][data-state="mixed"] {
+  background-color: rgb(0, 255, 0);
+}
+[data-reach-custom-checkbox][data-state="unchecked"] {
+  background-color: rgb(255, 0, 0);
+}
+[data-reach-custom-checkbox][data-state="checked"] {
+  background-color: rgb(0, 0, 255);
+}

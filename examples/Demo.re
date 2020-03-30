@@ -1,20 +1,12 @@
+[%raw "require('./Demo.css')"];
+
 module Index = {
-  Css.(global("body, *", [margin(px(0)), fontFamily(`sansSerif)]));
-  let className = Css.([marginRight(`px(10))] |> style);
+  let style = ReactDOMRe.Style.make(~marginRight="10px", ());
   [@react.component]
   let make = () => {
-    <div
-      className=Css.(
-        [
-          margin(`auto),
-          marginTop(`px(40)),
-          maxWidth(`px(500)),
-          padding(`px(10)),
-        ]
-        |> style
-      )>
+    <Container>
       <h1> "bs-reach"->React.string </h1>
-      <p className=Css.([marginBottom(`px(20))] |> style)>
+      <p>
         "Simple examples of how to use bs-reach. For more documentation on Reach UI, visit the "
         ->React.string
         <a href="https://reacttraining.com/reach-ui">
@@ -38,35 +30,33 @@ module Index = {
          "tooltip",
        ]
        |> List.map(url => {
-            <div key=url className>
+            <div key=url style>
               <a href={"/" ++ url}> url->React.string </a>
             </div>
           })
        |> Array.of_list
        |> React.array}
-    </div>;
+    </Container>;
   };
 };
 
 [@react.component]
 let make = () => {
   let url = ReasonReact.Router.useUrl();
-  <FocusVisible.Context>
-    {switch (url.path) {
-     | ["accordion"] => <AccordionDemo />
-     | ["alert-dialog"] => <AlertDialogDemo />
-     | ["alert"] => <AlertDemo />
-     | ["checkbox"] => <CheckboxDemo />
-     | ["combobox"] => <ComboboxDemo />
-     | ["dialog"] => <DialogDemo />
-     | ["disclosure"] => <DisclosureDemo />
-     | ["menu-button"] => <MenuButtonDemo />
-     | ["listbox"] => <ListboxDemo />
-     | ["rect"] => <RectDemo />
-     | ["slider"] => <SliderDemo />
-     | ["tabs"] => <TabsDemo />
-     | ["tooltip"] => <TooltipDemo />
-     | _ => <Index />
-     }}
-  </FocusVisible.Context>;
+  switch (url.path) {
+  | ["accordion"] => <AccordionDemo />
+  | ["alert-dialog"] => <AlertDialogDemo />
+  | ["alert"] => <AlertDemo />
+  | ["checkbox"] => <CheckboxDemo />
+  | ["combobox"] => <ComboboxDemo />
+  | ["dialog"] => <DialogDemo />
+  | ["disclosure"] => <DisclosureDemo />
+  | ["menu-button"] => <MenuButtonDemo />
+  | ["listbox"] => <ListboxDemo />
+  | ["rect"] => <RectDemo />
+  | ["slider"] => <SliderDemo />
+  | ["tabs"] => <TabsDemo />
+  | ["tooltip"] => <TooltipDemo />
+  | _ => <Index />
+  };
 };

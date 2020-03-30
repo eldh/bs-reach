@@ -1,7 +1,12 @@
 module Menu = {
   [@bs.module "@reach/menu-button/dist"] [@react.component]
   external make:
-    (~className: string=?, ~children: React.element) => React.element =
+    (
+      ~className: string=?,
+      ~style: ReactDOMRe.Style.t=?,
+      ~children: React.element
+    ) =>
+    React.element =
     "Menu";
 };
 
@@ -10,6 +15,7 @@ module Button = {
   external make:
     (
       ~className: string=?,
+      ~style: ReactDOMRe.Style.t=?,
       ~onFocus: ReactEvent.Focus.t => unit=?,
       ~onBlur: ReactEvent.Focus.t => unit=?,
       ~children: React.element
@@ -21,7 +27,12 @@ module Button = {
 module List = {
   [@bs.module "@reach/menu-button/dist"] [@react.component]
   external make:
-    (~className: string=?, ~children: React.element) => React.element =
+    (
+      ~className: string=?,
+      ~style: ReactDOMRe.Style.t=?,
+      ~children: React.element
+    ) =>
+    React.element =
     "MenuList";
 };
 
@@ -30,6 +41,7 @@ module Item = {
   external make:
     (
       ~className: string=?,
+      ~style: ReactDOMRe.Style.t=?,
       ~children: React.element,
       ~onSelect: unit => unit
     ) =>
@@ -42,6 +54,7 @@ module ExternalLink = {
   external make:
     (
       ~className: string=?,
+      ~style: ReactDOMRe.Style.t=?,
       ~children: React.element,
       ~as_: string=?,
       ~target: string=?,

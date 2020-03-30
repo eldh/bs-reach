@@ -2,6 +2,7 @@
 external make:
   (
     ~className: string=?,
+    ~style: ReactDOMRe.Style.t=?,
     ~onChange: int => unit=?,
     ~defaultIndex: int=?,
     ~index: int=?,
@@ -18,7 +19,12 @@ module TabList = {
 module Tab = {
   [@bs.module "@reach/tabs"] [@react.component]
   external make:
-    (~className: string=?, ~children: React.element) => React.element =
+    (
+      ~className: string=?,
+      ~style: ReactDOMRe.Style.t=?,
+      ~children: React.element
+    ) =>
+    React.element =
     "Tab";
 };
 
