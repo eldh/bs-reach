@@ -25,6 +25,7 @@ module Index = {
          "listbox",
          "menu-button",
          "rect",
+         "skipnav",
          "slider",
          "tabs",
          "tooltip",
@@ -54,6 +55,7 @@ let make = () => {
   | ["menu-button"] => <MenuButtonDemo />
   | ["listbox"] => <ListboxDemo />
   | ["rect"] => <RectDemo />
+  | ["skipnav"] => <SkipNavDemo />
   | ["slider"] => <SliderDemo />
   | ["tabs"] => <TabsDemo />
   | ["tooltip"] => <TooltipDemo />
