@@ -18,6 +18,14 @@ Then add it to bsconfig.json:
 ]
 ```
 
+Use in your app like this:
+```reason
+<div>
+  <Reach.VisuallyHidden> "Peek-a-boo" </Reach.VisuallyHidden>
+</div>
+```
+
+
 ## Documentation
 The [official documentation](https://reacttraining.com/reach-ui) for Reach UI has a lot of great examples and explains the api of the components well. The bindings tries to deviate from the original api:s as little as possible.
 
