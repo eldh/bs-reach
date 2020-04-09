@@ -56,5 +56,5 @@ module Handle = {
 
 module Marker = {
   [@bs.module "@reach/slider"] [@react.component]
-  external make: (~children: React.element, ~value: int) => React.element = "SliderMarker";
+  external make: (~children: React.element=?, ~value: int) => React.element = "SliderMarker";
 };
