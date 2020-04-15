@@ -14,11 +14,9 @@ export function rewriteProps(propMap, Comp) {
           }
     }, {})
 
-    return (
-      <Comp {...fixed} ref={ref}>
-        {children}
-      </Comp>
-    )
+    return React.createElement(Comp, {...fixed, ref, children})
+      
+    
   })
   Component.displayName = Comp.displayName
   return Component

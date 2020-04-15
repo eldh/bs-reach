@@ -1,4 +1,4 @@
-import { rewriteAriaProps } from '../rewriteProps'
+import { rewriteAriaProps } from './rewriteProps'
 import {
   AlertDialog as AlertDialog_,
   AlertDialogContent as AlertDialogContent_,

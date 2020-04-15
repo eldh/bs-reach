@@ -1,4 +1,4 @@
-import { rewriteAriaProps } from '../rewriteProps'
+import { rewriteAriaProps } from './rewriteProps'
 import {
   ComboboxInput as ComboboxInput_,
   ComboboxPopover as ComboboxPopover_,
