@@ -24,6 +24,6 @@
   "warnings": {
     "error": "+101"
   },
-  "namespace": true,
+  "namespace": "reach",
   "refmt": 3
 }
