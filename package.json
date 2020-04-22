@@ -29,7 +29,8 @@
   "devDependencies": {
     "@glennsl/bs-jest": "^0.5.0",
     "bs-platform": "7.2.2",
-    "parcel": "^2.0.0-alpha.3.2"
+    "parcel": "^2.0.0-alpha.3.2",
+    "reason-react": "^0.7.0"
   },
   "dependencies": {
     "@reach/accordion": "^0.9.1",
@@ -49,7 +50,6 @@
     "@reach/tabs": "^0.9.1",
     "@reach/tooltip": "^0.9.1",
     "@reach/visually-hidden": "^0.9.0",
-    "@reach/window-size": "^0.9.0",
-    "reason-react": "^0.7.0"
+    "@reach/window-size": "^0.9.0"
   }
 }
