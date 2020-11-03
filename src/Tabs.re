@@ -13,7 +13,9 @@ external make:
 
 module TabList = {
   [@bs.module "@reach/tabs"] [@react.component]
-  external make: (~children: React.element) => React.element = "TabList";
+  external make:
+    (~children: React.element, ~className: string=?) => React.element =
+    "TabList";
 };
 
 module Tab = {
